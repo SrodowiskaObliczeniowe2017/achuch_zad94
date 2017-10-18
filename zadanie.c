@@ -14,6 +14,7 @@ int main()
 	char kod7[10];
 	char kod8[10];
 	char kod9[10];
+	char odpowiedz[8];
 	
 	printf("Podaj pierwsze 80 znaków \n");
 	scanf("%99s", linijkaOdUzytkownika);
@@ -84,20 +85,273 @@ int main()
 	printf("\n");
 	
 	int i=0;
+	int poczatek = 0;
+	int koniec = 10;
 	char doPorownania[10];
-	for(i=0; i<10; i++)
+	for(i=poczatek; i<koniec; i++)
 	{
-		doPorownania[i] = linijkaOdUzytkownika[i];
+		doPorownania[i - poczatek] = linijkaOdUzytkownika[i];
 		
 	}
 	doPorownania[i] ='\0';
 	printf("%s",doPorownania);
 	printf("\n");
+	int indeksOdpowiedzi = 0;
 	
 	if(strcmp(doPorownania, kod0) == 0)
-        printf("Lancuchy s1 i s2 sa takie same");
-    else
-        printf("Lancuchy s1 i s2 NIE sa takie same");
+        	odpowiedz[indeksOdpowiedzi]='0';
+        if(strcmp(doPorownania, kod1) == 0)
+        	odpowiedz[indeksOdpowiedzi]='1';
+        if(strcmp(doPorownania, kod2) == 0)
+        	odpowiedz[indeksOdpowiedzi]='2';
+        if(strcmp(doPorownania, kod3) == 0)
+        	odpowiedz[indeksOdpowiedzi]='3';
+        if(strcmp(doPorownania, kod4) == 0)
+        	odpowiedz[indeksOdpowiedzi]='4';
+        if(strcmp(doPorownania, kod5) == 0)
+        	odpowiedz[indeksOdpowiedzi]='5';
+        if(strcmp(doPorownania, kod6) == 0)
+        	odpowiedz[indeksOdpowiedzi]='6';
+        if(strcmp(doPorownania, kod7) == 0)
+        	odpowiedz[indeksOdpowiedzi]='7';
+        if(strcmp(doPorownania, kod8) == 0)
+        	odpowiedz[indeksOdpowiedzi]='8';
+        if(strcmp(doPorownania, kod9) == 0)
+        	odpowiedz[indeksOdpowiedzi]='9';
+        
+        poczatek = 10;
+        koniec = 20;	
+        for(i=poczatek; i<koniec; i++)
+	{
+		doPorownania[i - poczatek] = linijkaOdUzytkownika[i];
+		
+	}
+	doPorownania[i-poczatek] ='\0';
+	printf("%s",doPorownania);
+	printf("\n");
+	indeksOdpowiedzi = 1;
+	
+	if(strcmp(doPorownania, kod0) == 0)
+        	odpowiedz[indeksOdpowiedzi]='0';
+        if(strcmp(doPorownania, kod1) == 0)
+        	odpowiedz[indeksOdpowiedzi]='1';
+        if(strcmp(doPorownania, kod2) == 0)
+        	odpowiedz[indeksOdpowiedzi]='2';
+        if(strcmp(doPorownania, kod3) == 0)
+        	odpowiedz[indeksOdpowiedzi]='3';
+        if(strcmp(doPorownania, kod4) == 0)
+        	odpowiedz[indeksOdpowiedzi]='4';
+        if(strcmp(doPorownania, kod5) == 0)
+        	odpowiedz[indeksOdpowiedzi]='5';
+        if(strcmp(doPorownania, kod6) == 0)
+        	odpowiedz[indeksOdpowiedzi]='6';
+        if(strcmp(doPorownania, kod7) == 0)
+        	odpowiedz[indeksOdpowiedzi]='7';
+        if(strcmp(doPorownania, kod8) == 0)
+        	odpowiedz[indeksOdpowiedzi]='8';
+        if(strcmp(doPorownania, kod9) == 0)
+        	odpowiedz[indeksOdpowiedzi]='9';
+        
+        poczatek = 20;
+        koniec = 30;	
+        for(i=poczatek; i<koniec; i++)
+	{
+		doPorownania[i - poczatek] = linijkaOdUzytkownika[i];
+		
+	}
+	doPorownania[i-poczatek] ='\0';
+	printf("%s",doPorownania);
+	printf("\n");
+	indeksOdpowiedzi = 3;
+	
+	if(strcmp(doPorownania, kod0) == 0)
+        	odpowiedz[indeksOdpowiedzi]='0';
+        if(strcmp(doPorownania, kod1) == 0)
+        	odpowiedz[indeksOdpowiedzi]='1';
+        if(strcmp(doPorownania, kod2) == 0)
+        	odpowiedz[indeksOdpowiedzi]='2';
+        if(strcmp(doPorownania, kod3) == 0)
+        	odpowiedz[indeksOdpowiedzi]='3';
+        if(strcmp(doPorownania, kod4) == 0)
+        	odpowiedz[indeksOdpowiedzi]='4';
+        if(strcmp(doPorownania, kod5) == 0)
+        	odpowiedz[indeksOdpowiedzi]='5';
+        if(strcmp(doPorownania, kod6) == 0)
+        	odpowiedz[indeksOdpowiedzi]='6';
+        if(strcmp(doPorownania, kod7) == 0)
+        	odpowiedz[indeksOdpowiedzi]='7';
+        if(strcmp(doPorownania, kod8) == 0)
+        	odpowiedz[indeksOdpowiedzi]='8';
+        if(strcmp(doPorownania, kod9) == 0)
+        	odpowiedz[indeksOdpowiedzi]='9';
+        	
+        poczatek = 30;
+        koniec = 40;	
+        for(i=poczatek; i<koniec; i++)
+	{
+		doPorownania[i - poczatek] = linijkaOdUzytkownika[i];
+		
+	}
+	doPorownania[i-poczatek] ='\0';
+	printf("%s",doPorownania);
+	printf("\n");
+	indeksOdpowiedzi = 4;
+	
+	if(strcmp(doPorownania, kod0) == 0)
+        	odpowiedz[indeksOdpowiedzi]='0';
+        if(strcmp(doPorownania, kod1) == 0)
+        	odpowiedz[indeksOdpowiedzi]='1';
+        if(strcmp(doPorownania, kod2) == 0)
+        	odpowiedz[indeksOdpowiedzi]='2';
+        if(strcmp(doPorownania, kod3) == 0)
+        	odpowiedz[indeksOdpowiedzi]='3';
+        if(strcmp(doPorownania, kod4) == 0)
+        	odpowiedz[indeksOdpowiedzi]='4';
+        if(strcmp(doPorownania, kod5) == 0)
+        	odpowiedz[indeksOdpowiedzi]='5';
+        if(strcmp(doPorownania, kod6) == 0)
+        	odpowiedz[indeksOdpowiedzi]='6';
+        if(strcmp(doPorownania, kod7) == 0)
+        	odpowiedz[indeksOdpowiedzi]='7';
+        if(strcmp(doPorownania, kod8) == 0)
+        	odpowiedz[indeksOdpowiedzi]='8';
+        if(strcmp(doPorownania, kod9) == 0)
+        	odpowiedz[indeksOdpowiedzi]='9';
+        	
+        poczatek = 40;
+        koniec = 50;	
+        for(i=poczatek; i<koniec; i++)
+	{
+		doPorownania[i - poczatek] = linijkaOdUzytkownika[i];
+		
+	}
+	doPorownania[i-poczatek] ='\0';
+	printf("%s",doPorownania);
+	printf("\n");
+	indeksOdpowiedzi = 5;
+	
+	if(strcmp(doPorownania, kod0) == 0)
+        	odpowiedz[indeksOdpowiedzi]='0';
+        if(strcmp(doPorownania, kod1) == 0)
+        	odpowiedz[indeksOdpowiedzi]='1';
+        if(strcmp(doPorownania, kod2) == 0)
+        	odpowiedz[indeksOdpowiedzi]='2';
+        if(strcmp(doPorownania, kod3) == 0)
+        	odpowiedz[indeksOdpowiedzi]='3';
+        if(strcmp(doPorownania, kod4) == 0)
+        	odpowiedz[indeksOdpowiedzi]='4';
+        if(strcmp(doPorownania, kod5) == 0)
+        	odpowiedz[indeksOdpowiedzi]='5';
+        if(strcmp(doPorownania, kod6) == 0)
+        	odpowiedz[indeksOdpowiedzi]='6';
+        if(strcmp(doPorownania, kod7) == 0)
+        	odpowiedz[indeksOdpowiedzi]='7';
+        if(strcmp(doPorownania, kod8) == 0)
+        	odpowiedz[indeksOdpowiedzi]='8';
+        if(strcmp(doPorownania, kod9) == 0)
+        	odpowiedz[indeksOdpowiedzi]='9';
+        	
+        poczatek = 50;
+        koniec = 60;	
+        for(i=poczatek; i<koniec; i++)
+	{
+		doPorownania[i - poczatek] = linijkaOdUzytkownika[i];
+		
+	}
+	doPorownania[i-poczatek] ='\0';
+	printf("%s",doPorownania);
+	printf("\n");
+	indeksOdpowiedzi = 6;
+	
+	if(strcmp(doPorownania, kod0) == 0)
+        	odpowiedz[indeksOdpowiedzi]='0';
+        if(strcmp(doPorownania, kod1) == 0)
+        	odpowiedz[indeksOdpowiedzi]='1';
+        if(strcmp(doPorownania, kod2) == 0)
+        	odpowiedz[indeksOdpowiedzi]='2';
+        if(strcmp(doPorownania, kod3) == 0)
+        	odpowiedz[indeksOdpowiedzi]='3';
+        if(strcmp(doPorownania, kod4) == 0)
+        	odpowiedz[indeksOdpowiedzi]='4';
+        if(strcmp(doPorownania, kod5) == 0)
+        	odpowiedz[indeksOdpowiedzi]='5';
+        if(strcmp(doPorownania, kod6) == 0)
+        	odpowiedz[indeksOdpowiedzi]='6';
+        if(strcmp(doPorownania, kod7) == 0)
+        	odpowiedz[indeksOdpowiedzi]='7';
+        if(strcmp(doPorownania, kod8) == 0)
+        	odpowiedz[indeksOdpowiedzi]='8';
+        if(strcmp(doPorownania, kod9) == 0)
+        	odpowiedz[indeksOdpowiedzi]='9';
+        
+        poczatek = 60;
+        koniec = 70;	
+        for(i=poczatek; i<koniec; i++)
+	{
+		doPorownania[i - poczatek] = linijkaOdUzytkownika[i];
+		
+	}
+	doPorownania[i-poczatek] ='\0';
+	printf("%s",doPorownania);
+	printf("\n");
+	indeksOdpowiedzi = 7;
+	
+	if(strcmp(doPorownania, kod0) == 0)
+        	odpowiedz[indeksOdpowiedzi]='0';
+        if(strcmp(doPorownania, kod1) == 0)
+        	odpowiedz[indeksOdpowiedzi]='1';
+        if(strcmp(doPorownania, kod2) == 0)
+        	odpowiedz[indeksOdpowiedzi]='2';
+        if(strcmp(doPorownania, kod3) == 0)
+        	odpowiedz[indeksOdpowiedzi]='3';
+        if(strcmp(doPorownania, kod4) == 0)
+        	odpowiedz[indeksOdpowiedzi]='4';
+        if(strcmp(doPorownania, kod5) == 0)
+        	odpowiedz[indeksOdpowiedzi]='5';
+        if(strcmp(doPorownania, kod6) == 0)
+        	odpowiedz[indeksOdpowiedzi]='6';
+        if(strcmp(doPorownania, kod7) == 0)
+        	odpowiedz[indeksOdpowiedzi]='7';
+        if(strcmp(doPorownania, kod8) == 0)
+        	odpowiedz[indeksOdpowiedzi]='8';
+        if(strcmp(doPorownania, kod9) == 0)
+        	odpowiedz[indeksOdpowiedzi]='9';
+        	
+        poczatek = 70;
+        koniec = 80;	
+        for(i=poczatek; i<koniec; i++)
+	{
+		doPorownania[i - poczatek] = linijkaOdUzytkownika[i];
+		
+	}
+	doPorownania[i-poczatek] ='\0';
+	printf("%s",doPorownania);
+	printf("\n");
+	indeksOdpowiedzi = 8;
+	
+	if(strcmp(doPorownania, kod0) == 0)
+        	odpowiedz[indeksOdpowiedzi]='0';
+        if(strcmp(doPorownania, kod1) == 0)
+        	odpowiedz[indeksOdpowiedzi]='1';
+        if(strcmp(doPorownania, kod2) == 0)
+        	odpowiedz[indeksOdpowiedzi]='2';
+        if(strcmp(doPorownania, kod3) == 0)
+        	odpowiedz[indeksOdpowiedzi]='3';
+        if(strcmp(doPorownania, kod4) == 0)
+        	odpowiedz[indeksOdpowiedzi]='4';
+        if(strcmp(doPorownania, kod5) == 0)
+        	odpowiedz[indeksOdpowiedzi]='5';
+        if(strcmp(doPorownania, kod6) == 0)
+        	odpowiedz[indeksOdpowiedzi]='6';
+        if(strcmp(doPorownania, kod7) == 0)
+        	odpowiedz[indeksOdpowiedzi]='7';
+        if(strcmp(doPorownania, kod8) == 0)
+        	odpowiedz[indeksOdpowiedzi]='8';
+        if(strcmp(doPorownania, kod9) == 0)
+        	odpowiedz[indeksOdpowiedzi]='9';
+
+
+	printf("%s",odpowiedz);
 	
 	return 0;
 
