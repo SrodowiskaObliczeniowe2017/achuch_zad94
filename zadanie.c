@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
@@ -19,7 +20,7 @@ int main()
 	printf("\n");
 	
 	printf("Podaj kod dla 0\n");
-	scanf("%99s", kod0);
+	scanf("%s", kod0);
 	printf("\n");
 	
 	printf("Podaj kod dla 1\n");
@@ -81,6 +82,22 @@ int main()
 	printf("\n");
 	printf(kod9);
 	printf("\n");
+	
+	int i=0;
+	char doPorownania[10];
+	for(i=0; i<10; i++)
+	{
+		doPorownania[i] = linijkaOdUzytkownika[i];
+		
+	}
+	doPorownania[i] ='\0';
+	printf("%s",doPorownania);
+	printf("\n");
+	
+	if(strcmp(doPorownania, kod0) == 0)
+        printf("Lancuchy s1 i s2 sa takie same");
+    else
+        printf("Lancuchy s1 i s2 NIE sa takie same");
 	
 	return 0;
 
