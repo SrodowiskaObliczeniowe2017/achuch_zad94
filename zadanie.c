@@ -1,7 +1,11 @@
 #include <stdio.h>
 
-main()
+int main()
 {
-printf("Hello, world!\n");
-return 0;
+	char linijkaOdUzytkownika[80];
+	scanf("%99s", linijkaOdUzytkownika);
+	printf(linijkaOdUzytkownika);
+	printf("\n");
+	return 0;
+
 } 
